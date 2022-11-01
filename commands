@@ -1,0 +1,88 @@
+    1  clear
+    2  python --version
+    3  apt install python
+    4  init git
+    5  cd 
+    6  apt install git
+    7  git init
+    8  which git
+    9  cat .ssh/id_rsa.pub
+   10  cd .ssh
+   11  ls
+   12  cd
+   13  ssh-keygen
+   14  cd .ssh
+   15  ls
+   16  cd
+   17  cat .ssh/id_rsa.pub 
+   18  git clone git@github.com:imabhisekh/ansible.git
+   19  ls
+   20* 
+   21  ls
+   22  git config --global user.name imabhisekh
+   23  git config --global user.email abhishektembhare72@gmail.com
+   24  cat .gitconfig
+   25  cat /.gitconfig
+   26  gitconfig --list
+   27  ls
+   28  cd ..
+   29  cat .gitconfig
+   30  ls
+   31  cd ansible/
+   32  vim README.md 
+   33  git add README.md 
+   34  git status README.md 
+   35  git commit -m "updated file"
+   36  git status README.md 
+   37  git push origin master
+   38  git push git@github.com:imabhisekh/ansible.git
+   39  cd
+   40  ls
+   41  vim ssh1.pem
+   42  ls -ll
+   43  chmod 600 ssh1.pem 
+   44  ls -ll
+   45  ls
+   46  apt-add-repository ppa:ansible/ansible
+   47  apt update
+   48  apt install ansible
+   49  echo "18.207.187.180" >> /etc/ansible/hosts
+   50  ansible -i /etc/ansible/hosts all ubuntu@ssh1.pem -u ubuntu -m shell -a hostname
+   51  ansible -i /etc/ansible/hosts all ubuntu@/ssh1.pem -u ubuntu -m shell -a hostname
+   52  ls
+   53  mv ssh1.pem  >> /home/ubuntu
+   54  mv ssh1.pem  > /home/ubuntu
+   55  mv ssh1.pem   /home/ubuntu
+   56  ls
+   57  cd /home/ubuntu/
+   58  ls
+   59  cd
+   60  ansible -i /etc/ansible/hosts all  --private-key /home/ubuntu/ssh1.pem  -u ubuntu -m shell -a hostname
+   61  echo "54.91.112.0" >> /etc/ansible/hosts
+   62  ansible -i /etc/ansible/hosts  all --private-key /home/ubuntu/ssh1.pem  -u ubuntu -m shell -a hostname
+   63  ansible -i /etc/ansible/hosts  all --private-key /home/ubuntu/ssh1.pem  -u ubuntu -m shell -a hostname ifconfig
+   64  ifconfig
+   65  ls
+   66  cp /etc/ansible/hosts   ansible/
+   67  cd ansible/
+   68  ls
+   69  git push 
+   70  ls
+   71  cd
+   72  cd ansible/
+   73  git add hosts
+   74  git commit -m "second"
+   75  git push 
+   76  cd
+   77  histry
+   78  history
+   79  cd
+   80  cd ansible/
+   81  ls
+   82  touch steps
+   83  cd
+   84  historey |grep ansible/steps
+   85  history |grep ansible/steps
+   86  history | grep ansible/steps
+   87  touch commands
+   88  history > commands
