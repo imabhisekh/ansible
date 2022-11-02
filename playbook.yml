@@ -1,0 +1,8 @@
+--- # at the starting of playbook
+- name: playbook_1     #this is for name of playbook
+  hosts: master
+  tasks:
+    - name: my first task
+      debug: 
+        msg: "all are fine"        
+... # at the ending of playbook
