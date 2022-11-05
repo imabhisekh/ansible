@@ -1,1 +1,36 @@
-kalayni ka ghar 
+#---
+#-name : abhisekh-playbook
+# hosts : all
+# vars :
+#  a:"global variables"
+#  b:"global variables"
+#tasks:
+#   -name: testing prority for global and local var
+#    vars:
+#     a:"this text for local var"
+#    debug:
+#      msg:"{{a}}"
+#    -name: for local var 
+#     vars:
+#      b:"this ia also for local var"
+#     debug:
+#       msg:"{{b}}"
+#...  
+---
+ - name : abhisekh-playbook
+   hosts : all
+   vars :
+     a: "global variables"
+     b: "global variables"
+   tasks:
+    - name: testing prority for global and local var
+      vars:
+        a: "this text for local var"
+      debug:
+       msg: "{{a}}"
+    - name: for local var
+      vars:
+        b: "this ia also for local var"
+      debug:
+         msg: "{{b}}"
+...
