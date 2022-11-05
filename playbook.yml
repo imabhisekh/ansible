@@ -1,6 +1,6 @@
 --- # at the starting of playbook
 - name: playbook_1     #this is for name of playbook
-  hosts: master
+  hosts: all
   tasks:
     - name: my first task
       debug: 

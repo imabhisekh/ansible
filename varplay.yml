@@ -1,0 +1,10 @@
+---
+ - name : abhisekh
+   hosts : all
+   vars_files :
+    - data.yml
+   tasks:
+    - name: tasks1
+      debug:
+        msg : "{{a}}"
+...

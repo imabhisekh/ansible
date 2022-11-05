@@ -1,0 +1,9 @@
+---
+ - name: abhisekh
+   hosts: all
+
+   tasks:
+     - name: running from host file
+       debug:
+         msg: "{{A}}"
+...        

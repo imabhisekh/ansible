@@ -1,0 +1,15 @@
+---
+ - name : abhisekh
+   hosts : all
+   vars_prompt :
+      - name : a
+        prompt : " aa prompt"
+        private : no
+
+   tasks:
+    - name: tasks1
+      vars:
+        a: "msg"       
+      debug:
+        msg : "{{a}}"
+...
