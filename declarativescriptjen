@@ -1,0 +1,15 @@
+peline{
+    agent any
+    stages{ 
+        stage('SCM Checkout'){
+            steps{
+                git branch: 'main', url: 'https://github.com/imabhisekh/ansible.git'
+            }   
+        }
+        stage('Execute Ansible'){
+            steps{
+                ansiblePlaybook credentialsId: '54.174.75.125', disableHostKeyChecking: true, installation: 'ansible2', inventory: 'ansible.inv', playbook: 'playbook1.yml'
+            }
+        }
+    }
+}   
