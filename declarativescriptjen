@@ -1,5 +1,5 @@
 peline{
-    agent any
+    agent any  #for running on node  agent {'labelname'}
     stages{ 
         stage('SCM Checkout'){
             steps{
