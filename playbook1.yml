@@ -18,7 +18,7 @@
 #...  
 ---
  - name : abhisekh-playbook
-   hosts : all
+   hosts : localhost
    vars :
      a: "global variables"
      b: "global variables"
