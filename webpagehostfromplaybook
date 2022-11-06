@@ -1,0 +1,28 @@
+---
+- name: abhisekh
+  hosts: all
+  become: true
+
+  tasks:
+   - name: cache
+     apt:
+       update_cache: yes
+
+   - name: install apache
+     apt:
+       name: apache2
+       state: latest
+
+   - name: host webpage
+     ansible.builtin.copy:
+        src: /root/webpage/index.html
+        dest: /var/www/html/index.html
+
+   - name: restart apache
+     service:
+         name: apache2
+         state: restarted
+...
+
+
+#check for proper paths or create path 
