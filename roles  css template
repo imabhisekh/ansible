@@ -1,3 +1,11 @@
+roles in ansible 
+in hostfile add ip of node .
+first make direactory (myroles)
+in that directory create role # ansible-galaxy init <rolename>
+ and also create a file with extention .yml in that add name,hosts,become:true,roles: (name of role that you created) this file will execute role.
+ now go to role and tasks in that write below script.
+ 
+
 ---
 - name: install apache
   ansible.builtin.apt:
